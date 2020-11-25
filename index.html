@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>COVID-19 Tracker</title>
+    <meta name="author" content="Melanys Figueredo Toledano">
+    <meta name="description" content="Track the spread of the Coronavirus Covid-19 outbreak">
+    <meta name="keywords"
+        content="COVID-19, Coronavirus, Covid updates, Coronavirus cases, News coronavirus, Coronavirus today">
+    <meta name="thumbnail" content="assets/image/Covid-19_Updates.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Covid-19 Tracker">
+    <meta property="og:description" content="Track the spread of the Coronavirus Covid-19 outbreak">
+    <meta property="og:image" content="assets/image/Covid-19_Updates.png">
+    <meta property="og:url" content="https://melanyss.github.io/covid19-Tracker/">
+    <meta name="twitter:title" content="Covid-19 Tracker">
+    <meta name="twitter:description" content="Track the spread of the Coronavirus Covid-19 outbreak">
+    <meta name="twitter:image" content="https://melanyss.github.io/covid19-Tracker/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="top">COVID-19 Tracker</h1>
+            <h2 class="heading">🦠 World</h2>
+            <span id="worldUpdated" class="updates"></span>
+        </header>
+        <section class="worldSec">
+            <div class="space">
+                <ul class="worldUl">
+                    <li class="worldLi">
+                        <div class="worldDiv">
+                            <span class="text-base text-gray-700 dark:text-gray-400">Total <span
+                                    class="text-orange-500">Cases</span></span>
+                            <h3 id="worldCases" class="resp-txt text-orange-500 leading-none mt-2"></h3>
+                        </div>
+                    </li>
+                    <li class="worldLi">
+                        <div class="worldDiv">
+                            <span class="text-base text-gray-700 dark:text-gray-400">Total <span
+                                    class="text-green-600">Recoveries</span></span>
+                            <h3 id="worldRecovered"
+                                class="resp-txt text-green-600 leading-none mt-2 dark:text-green-500"></h3>
+                        </div>
+                    </li>
+                    <li class="worldLi">
+                        <div class="worldDiv">
+                            <span class="text-base text-gray-700 dark:text-gray-400">Active <span
+                                    class="text-indigo-600">Cases</span></span>
+                            <h3 id="worldActive"
+                                class="resp-txt text-indigo-600 leading-none mt-2 dark:text-indigo-500"></h3>
+                        </div>
+                    </li>
+                    <li class="worldLi">
+                        <div class="worldDiv">
+                            <span class="text-base text-gray-700 dark:text-gray-400">Total <span
+                                    class="text-gray-700">Deaths</span></span>
+                            <h3 id="worldDeaths" class="resp-txt text-gray-700 dark:text-gray-500 leading-none mt-2">
+                            </h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="countrySec">
+            <h2 class="heading">Breakdown</h2>
+            <table id="breakdown" class="table">
+                <thead>
+                    <tr>
+                        <th>Flag</th>
+                        <th>Country</th>
+                        <th>Cases</th>
+                        <th>Deaths</th>
+                        <th>Recovered</th>
+                        <th>Active</th>
+                        <th>Critical</th>
+                        <th>Tests</th>
+                        <th>Today Cases</th>
+                        <th>Today Deaths</th>
+                        <th>Cases per 1M</th>
+                        <th>Deaths per 1m</th>
+                        <th>Tests per 1m</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+        <footer>
+            <button class="resourcesBtn"><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank"
+                    alt="" rel="noreferrer">COVID-19 FAQ</a></button><br>
+            <div class="inline">
+                <figure title="Cover your mouth and nose with a mask when around others">
+                    <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+                        target="_blank" rel="noreferrer">
+                        <img src="assets/image/prevention.svg" alt="Mask" width="70" height="40" class="ppad">
+                        <figcaption>Prevent</figcaption>
+                    </a>
+                </figure>
+                <figure title="Wash your hands often">
+                    <a href="https://www.ecdc.europa.eu/en/covid-19-pandemic" target="_blank" rel="noreferrer">
+                        <img src="assets/image/wash-your-hands.svg" alt="Igiene" width="90" class="ppad">
+                        <figcaption>Healthcare</figcaption>
+                    </a>
+                </figure>
+                <figure title="Avoid close contact">
+                    <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/coronavirus-safety.html"
+                        target="_blank" rel="noreferrer">
+                        <img src="assets/image/house.svg" alt="Stay in house" width="90" class="ppad">
+                        <figcaption>Stay Safe</figcaption>
+                    </a>
+                </figure>
+            </div>
+            <a href="#top">
+                <div class="tothetop" style="opacity: 1;">^</div>
+            </a>
+            <div class="quoteDiv">
+                <q id="cite"></q><br><span id="citeAuthor"></span>
+            </div>
+            <p>Coded with <a href="https://www.buymeacoffee.com/melanyss" target="_blank" alt="Buy me a coffee">☕</a> by
+                <br>
+                <a href="https://melanyss.github.io" target="_blank">Melanys Figueredo</a>
+            </p>
+            <p>Data Source: <a href="https://disease.sh/" target="_blank">disease.sh API</a></p>
+        </footer>
+    </main>
+    <noscript>Please enable javascript to view this website content.</noscript>
+    <script src="js/vendor.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
