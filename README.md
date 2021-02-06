@@ -1,7 +1,7 @@
 # Covid-19 Tracker (PWA)
 
 ## Live statistics and coronavirus news tracking the number of confirmed cases, recovered patients, tests, and death toll due to the COVID-19 virus from all over the world.
-## [Website](https://melanyss.github.io/covid19-Tracker/)
+## [Website](https://melanyss.github.io/music-player/)
 
 
 ## Author
@@ -10,7 +10,8 @@
 
 * Website: https://melanyss.github.io
 * Twitter: [@MelanysFT](https://twitter.com/MelanysFT)
-* Github: [@melanyss](https://github.com/melanyss/melanyss.github.io)
+* GitHub: [@melanyss](https://github.com/melanyss/melanyss.github.io)
+* [Portfolio](https://extasius.com/portfolio/)
 
 ## 🤝 Contributing
 
