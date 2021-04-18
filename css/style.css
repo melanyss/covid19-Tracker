@@ -564,7 +564,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 }
 
 .ppad {
-  padding-left: 35px;
+  padding-left: 155px;
 }
 
 figure:hover {
@@ -605,7 +605,9 @@ figcaption {
   .pagination {
     width: 50px;
   }
-
+  
+  h1 {font-size:4em}
+  header div span{font-size:85%}
   h2 {
     font-size: 3.5em;
   }
@@ -658,9 +660,8 @@ figcaption {
     padding: 15px !important;
   }
 
-  h1 {
-    font-size: 3.7em;
-  }
+  h1 {font-size:3.5em}
+  header div span{font-size:80%}
 
   h2 {
     font-size: 3;
