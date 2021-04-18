@@ -555,7 +555,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 }
 
 .inline {
-  display: inline;
+  display: inline-block;
 }
 
 .resourcesBtn {
