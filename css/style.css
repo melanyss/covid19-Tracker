@@ -71,7 +71,11 @@ footer {
   padding: 20px;
 }
 header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
   text-align: center;
+  color: white !important;
 }
 span,
 p {
