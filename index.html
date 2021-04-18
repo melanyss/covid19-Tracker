@@ -9,8 +9,8 @@
     <meta name="description" content="Track the spread of the Coronavirus Covid-19 outbreak">
     <meta name="keywords"
         content="COVID-19, Coronavirus, Covid updates, Coronavirus cases, News coronavirus, Coronavirus today">
+    <meta name="robots" content="index,follow" />
     <meta name="thumbnail" content="assets/image/Covid-19_Updates.png" />
-    <!--
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -24,11 +24,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
+   <!-- <link rel="manifest" href="assets/favicon/manifest.json"> -->
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    -->
     <meta property="og:title" content="Covid-19 Tracker">
     <meta property="og:description" content="Track the spread of the Coronavirus Covid-19 outbreak">
     <meta property="og:image" content="assets/image/Covid-19_Updates.png">
@@ -38,17 +35,26 @@
     <meta name="twitter:image" content="https://melanyss.github.io/covid19-Tracker/index.html">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://progressier.com/client/script.js?id=0X52glZS799zul1Kp56W"></script> 
+    <script src="https://progressier.com/client/script.js?id=0X52glZS799zul1Kp56W"></script>
 </head>
 
 <body>
     <main>
-        <header>
-            <h1 id="top">COVID-19 Tracker</h1> 
-         <!--   <h2 class="heading">🦠 World</h2>
-            <span id="worldUpdated" class="updates"></span> -->
-		<div id="particles-js"></div>
+        <header id="top">
+            <div>
+                <h1>CoronaVirus Tracker</h1>
+                <span id="worldUpdated" class="updates"></span>
+            </div>
+            <div id="particles-js"></div>
         </header>
+        <section class="covid19stats">
+            <h3 class="title">COVID-19 Global Stats</h3>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div id="chartDiv"></div>
+                </div>
+            </div>
+        </section>
         <section class="worldSec">
             <div class="space">
                 <ul class="worldUl">
@@ -86,16 +92,8 @@
                 </ul>
             </div>
         </section>
-        <section class="covid19stats">
-		 <h3 class="title">COVID-19 Global Stats</h3>
-		    <div class="grid-container">
-			  <div class="grid-item">
-				<div id="chartDiv"></div>
-			  </div>
-	    	</div>
-    	</section>
         <section class="countrySec">
-            <h2 class="heading">Breakdown</h2>
+            <h2 class="heading" id="showbreakdown">Breakdown</h2>
             <table id="breakdown" class="table">
                 <thead>
                     <tr>
@@ -142,16 +140,17 @@
                 </figure>
             </div>
             <a href="#top">
-                <div class="tothetop" style="opacity: 1;">^</div>
-            </a>
+                <div class="tothetop" style="opacity: 1;"><img src="assets/image/up-arrow.png"> </div>
+            </a><br>
+            <p>Coded with
+                <!-- <a href="https://www.buymeacoffee.com/melanyss" target="_blank" alt="Buy me a coffee"> -->☕</a>
+                by <br>
+                <a href="https://github.com/melanyss/covid19-Tracker" target="_blank"> Melanys Figueredo</a>
+            </p>
+            <p>Data Source: <a href="https://disease.sh/" target="_blank">disease.sh API</a></p>
             <div class="quoteDiv">
                 <q id="cite"></q><br><span id="citeAuthor"></span>
             </div>
-            <p>Coded by <!-- with <a href="https://www.buymeacoffee.com/melanyss" target="_blank" alt="Buy me a coffee">☕</a> 
-               <br> -->
-                <a href="https://melanyss.github.io" target="_blank"> Melanys Figueredo</a>
-            </p>
-            <p>Data Source: <a href="https://disease.sh/" target="_blank">disease.sh API</a></p>
         </footer>
     </main>
     <noscript>Please enable javascript to view this website content.</noscript>
