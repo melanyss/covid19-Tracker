@@ -78,6 +78,9 @@ header {
   text-align: center;
   color: white !important;
 }
+header h1 {
+	position: fixed;
+}
 
 canvas {
   display: block;
