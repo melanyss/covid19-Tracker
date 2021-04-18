@@ -34,7 +34,7 @@ header {
   position: relative;
   text-align: center !important;
   display: grid;
-  overflow-x: auto;
+  overflow-x: scroll
 }
 
 header div {
@@ -163,7 +163,6 @@ input {
 }
 
 canvas,
-img,
 svg {
   display: block;
 }
@@ -436,8 +435,12 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 }
 
 .text-base {
-  font-weight: 700;
+  font-weight: bold !important;
   text-align: center;
+}
+
+.worldDiv span span {
+  text-transform: uppercase;
 }
 
 #breakdown_length {
@@ -554,17 +557,18 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   margin-top: 0.2rem;
 }
 
-.inline {
-  display: block;
-}
-
 .resourcesBtn {
   display: inline-block;
   border-radius: 10%;
 }
 
 .ppad {
-  padding-left: 155px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+figure a img {
+  left: 50px;
 }
 
 figure:hover {
@@ -605,9 +609,11 @@ figcaption {
   .pagination {
     width: 50px;
   }
-  
-  h1 {font-size:4em}
-  header div span{font-size:85%}
+
+  header {
+    font-size: 60%
+  }
+
   h2 {
     font-size: 3.5em;
   }
@@ -660,8 +666,9 @@ figcaption {
     padding: 15px !important;
   }
 
-  h1 {font-size:3.5em}
-  header div span{font-size:80%}
+  header {
+    font-size: 80%
+  }
 
   h2 {
     font-size: 3;
@@ -686,6 +693,10 @@ figcaption {
   .paginate_button {
     font-size: 1.4em;
     padding: 6px;
+  }
+
+  figure {
+    display: inline-flex;
   }
 }
 
