@@ -70,6 +70,7 @@ p {
 footer {
   padding: 20px;
 }
+
 header {
   width: 100vw;
   height: 100vh;
@@ -77,6 +78,22 @@ header {
   text-align: center;
   color: white !important;
 }
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #030303;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 span,
 p {
   font-size: 100%;
