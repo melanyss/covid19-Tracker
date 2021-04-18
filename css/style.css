@@ -708,3 +708,18 @@ figcaption {
     }
   }
 }
+@media (max-width: 1000px) {
+	section.covid19stats {
+		padding: 100px 50px;
+	}
+}
+@media (max-width: 600px) {
+section.covid19stats {
+		padding: 80px 30px;
+	}
+}
+@media (max-width: 1000px) {
+	.covid19stats {
+		display: none;
+	}
+}
