@@ -34,7 +34,7 @@ header {
   position: relative;
   text-align: center !important;
   display: grid;
-  overflow-x: scroll
+  overflow: hidden
 }
 
 header div {
