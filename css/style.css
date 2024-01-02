@@ -282,6 +282,7 @@ thead th.sorting_desc {
   left: 10%;
   right: 10%;
   bottom: 10%;
+  margin-top: 40px !important;
 }
 
 .worldUl li:first-child {
@@ -878,9 +879,9 @@ g[aria-labelledby] {
   }
 }
 
-html.sr .load-hidden {
+/* html.sr .load-hidden {
   visibility: hidden;
-}
+} */
 
 @media (min-width: 200px) and (max-width: 480px) {
   html {
@@ -889,6 +890,12 @@ html.sr .load-hidden {
 
   .worldUl {
     grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  
+  .worldUl li:first-child {
+    grid-column: 1;
+    /* First item spans two columns */
   }
 
   .resp-txt {
