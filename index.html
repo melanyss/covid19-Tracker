@@ -38,7 +38,7 @@
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <!-- Font & Style & Scripts -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -47,11 +47,14 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BCY7BNT7B3"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-BCY7BNT7B3');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BCY7BNT7B3');
     </script>
 </head>
 
@@ -64,13 +67,13 @@
     </div>
     <main>
         <header id="top">
-            <div class="header-txt">
+            <div class="header-txt" role="banner">
                 <h1>Track the Pandemic</h1>
                 <h2>Real-time COVID-19 Data</h2>
                 <h3>Access up-to-date information and statistics on the COVID-19 pandemic,<br>including historical data
                     and worldwide trends.</h3>
             </div>
-            <div id="particles-js"></div>
+            <div id="particles-js" aria-hidden="true"></div>
         </header>
         <section class="worldSec">
             <div class="space">
@@ -79,21 +82,21 @@
                     <h2 class="title covid19stats" id="title">Global Stats</h2>
                 </div>
                 <ul class="worldUl">
-                    <li class="worldLi cool-border revealSeq">
+                    <li class="worldLi cool-border revealSeq" aria-label="World Population">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">World <span
                                     class="color-txt">Population</span></span>
                             <h3 id="population" class="resp-txt leading-none mt-2"></h3>
                         </div>
                     </li>
-                    <li class="worldLi cool-border revealSeq">
+                    <li class="worldLi cool-border revealSeq" aria-label="Total Cases">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">Total <span
                                     class="text-orange-500">Cases</span></span>
                             <h3 id="worldCases" class="resp-txt text-orange-500 leading-none mt-2"></h3>
                         </div>
                     </li>
-                    <li class="worldLi cool-border revealSeq">
+                    <li class="worldLi cool-border revealSeq" aria-label="Total Recoveries">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">Total <span
                                     class="text-green-600">Recoveries</span></span>
@@ -101,7 +104,7 @@
                                 class="resp-txt text-green-600 leading-none mt-2 dark:text-green-500"></h3>
                         </div>
                     </li>
-                    <li class="worldLi cool-border revealSeq">
+                    <li class="worldLi cool-border revealSeq" aria-label="Active Cases">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">Active <span
                                     class="text-indigo-600">Cases</span></span>
@@ -109,7 +112,7 @@
                                 class="resp-txt text-indigo-600 leading-none mt-2 dark:text-indigo-500"></h3>
                         </div>
                     </li>
-                    <li class="worldLi cool-border revealSeq">
+                    <li class="worldLi cool-border revealSeq" aria-label="Total Deaths">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">Total <span
                                     class="text-gray-700">Deaths</span></span>
@@ -120,29 +123,9 @@
                 </ul>
             </div>
         </section>
-        <section id="pieChartSection">
-            <div id="chartsGrid">
-                <div id="" class="chartContainer pie-item cool-border lineChart revealSeq">
-                    <h4 class="text-gray-700 dark:text-gray-400">Global COVID-19 Case Distribution</h4>
-                    <div id="pieChart1" class="pieChart chartContainer"></div>
-                </div>
-                <div id="" class="chartContainer pie-item cool-border lineChart revealSeq">
-                    <h4 class="text-gray-700 dark:text-gray-400">Daily Changes Overview</h4>
-                    <div id="pieChart3" class="pieChart chartContainer"></div>
-                </div>
-                <div class="lineChart chartContainer pie-item cool-border revealSeq">
-                    <h4 class="text-gray-700 dark:text-gray-400">Historical Worldwide Covid Stats</h4>
-                    <div id="chartDiv" class="pieChart chartContainer"></div>
-                </div>
-                <div id="" class="lineChart chartContainer pie-item cool-border revealSeq">
-                    <h4 class="text-gray-700 dark:text-gray-400">Worldwide Vaccine Coverage Stats</h4>
-                    <div id="lineChart1" class="chartContainer"></div>
-                </div>
-            </div>
-        </section>
         <section class="countrySec">
             <h2 class="heading" id="showbreakdown">Breakdown</h2>
-            <table id="breakdown" class="table cool-border">
+            <table id="breakdown" class="table cool-border" role="table" aria-label="COVID-19 Country Breakdown">
                 <thead>
                     <tr>
                         <th>Flag</th>
@@ -203,14 +186,7 @@
     </main>
     <noscript>Please enable javascript to view this website content.</noscript>
     <script src="js/vendor.js"></script>
-    <!-- <script src="js/amcharts.js"></script> -->
-    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/fonts/notosans-sc.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
