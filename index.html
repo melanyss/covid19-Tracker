@@ -69,34 +69,34 @@
         <header id="top">
             <div class="header-txt" role="banner">
                 <h1>Track the Pandemic</h1>
-                <h2>Real-time COVID-19 Data</h2>
-                <h3>Access up-to-date information and statistics on the COVID-19 pandemic,<br>including historical data
+                <h2>Real-time Covid Data Tracker</h2>
+                <h3>Access up-to-date information and statistics on the coronavirus pandemic,<br>including historical data
                     and worldwide trends.</h3>
             </div>
+            <div id="particles-background"></div>
             <div id="particles-js" aria-hidden="true"></div>
         </header>
         <section class="worldSec">
             <div class="space">
-                <span id="worldUpdated" class="updates"></span>
                 <div class="covid19stats">
                     <h2 class="title covid19stats" id="title">Global Stats</h2>
                 </div>
                 <ul class="worldUl">
-                    <li class="worldLi cool-border revealSeq" aria-label="World Population">
+                    <li class="worldLi cool-border revealSeq populationLi" aria-label="World Population">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">World <span
                                     class="color-txt">Population</span></span>
                             <h3 id="population" class="resp-txt leading-none mt-2"></h3>
                         </div>
                     </li>
-                    <li class="worldLi cool-border revealSeq" aria-label="Total Cases">
+                    <li class="worldLi cool-border revealSeq casesLi" aria-label="Total Cases">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">Total <span
                                     class="text-orange-500">Cases</span></span>
                             <h3 id="worldCases" class="resp-txt text-orange-500 leading-none mt-2"></h3>
                         </div>
                     </li>
-                    <li class="worldLi cool-border revealSeq" aria-label="Total Recoveries">
+                    <li class="worldLi cool-border revealSeq recoveredLi" aria-label="Total Recoveries">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">Total <span
                                     class="text-green-600">Recoveries</span></span>
@@ -104,7 +104,7 @@
                                 class="resp-txt text-green-600 leading-none mt-2 dark:text-green-500"></h3>
                         </div>
                     </li>
-                    <li class="worldLi cool-border revealSeq" aria-label="Active Cases">
+                    <li class="worldLi cool-border revealSeq activeLi" aria-label="Active Cases">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">Active <span
                                     class="text-indigo-600">Cases</span></span>
@@ -112,7 +112,7 @@
                                 class="resp-txt text-indigo-600 leading-none mt-2 dark:text-indigo-500"></h3>
                         </div>
                     </li>
-                    <li class="worldLi cool-border revealSeq" aria-label="Total Deaths">
+                    <li class="worldLi cool-border revealSeq deathsLi" aria-label="Total Deaths">
                         <div class="worldDiv">
                             <span class="text-base text-gray-700 dark:text-gray-400">Total <span
                                     class="text-gray-700">Deaths</span></span>
@@ -124,7 +124,7 @@
             </div>
         </section>
         <section class="countrySec">
-            <h2 class="heading" id="showbreakdown">Breakdown</h2>
+            <h2 class="heading" id="showbreakdown">Country Stats</h2>
             <table id="breakdown" class="table cool-border" role="table" aria-label="COVID-19 Country Breakdown">
                 <thead>
                     <tr>
@@ -146,6 +146,7 @@
             </table>
         </section>
         <footer>
+            
             <button class="resourcesBtn"><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank"
                     alt="" rel="noreferrer">COVID-19 FAQ</a></button><br>
             <div>
@@ -173,14 +174,41 @@
             <a href="#top">
                 <div class="tothetop" style="opacity: 1;"><img src="assets/image/up-arrow.png"> </div>
             </a><br>
+            <span id="worldUpdated" class="updates"></span>
             <p>Coded with
                 <a href="https://www.buymeacoffee.com/melanyss" target="_blank" alt="Buy me a coffee">☕</a>
                 by <br>
                 <a href="https://melanys.me/" target="_blank"> Melanys Figueredo</a>
             </p>
             <p>Data Source: <a href="https://disease.sh/" target="_blank">disease.sh API</a></p>
+            <p>Project code: <a href="https://github.com/melanyss/covid19-Tracker" title="Open Source"
+                    target="_blank">open source</a></p>
+            <div class="credits">
+                <div class="social-container">
+                    <h5 class="title">Don't be shy. Say hi 👋</h5>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://x.com/MelanysFT" target="_blank" rel="noreferrer">
+                                <img src="assets/image/x-twitter-brands-solid.svg" alt="X">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/melanysft" target="_blank" rel="noreferrer">
+                                <img src="assets/image/linkedin-brands-solid.svg" alt="Linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/melanyss" target="_blank" rel="noreferrer">
+                                <img src="assets/image/github-brands-solid.svg" alt="Github">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
             <div class="quoteDiv">
                 <q id="cite"></q><br><span id="citeAuthor"></span>
+            </div>
             </div>
         </footer>
     </main>
